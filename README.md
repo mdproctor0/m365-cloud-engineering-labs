@@ -18,6 +18,7 @@ This repository documents hands-on Exchange Online and email security administra
 - **Tenant:** ProctorCloud.onmicrosoft.com (Microsoft 365 E5 Developer Tenant)
 - **Admin Portals Used:** Exchange Admin Center, Microsoft Defender (security.microsoft.com)
 - **PowerShell Modules:** ExchangeOnlineManagement (`Connect-ExchangeOnline`)
+- - **External Validation:** MXToolbox SPF/DMARC lookup
 
 ---
 
