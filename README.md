@@ -10,7 +10,7 @@ This repository documents hands-on Exchange Online and email security administra
 | Lab | Topic | Key Skills |
 |-----|-------|------------|
 | [Lab 01](./lab-01-exchange-online/) | Exchange Online Administration | Shared mailboxes, distribution groups, dynamic distribution groups, transport rules — GUI and PowerShell |
-
+| [Lab 02](./lab-02-email-auth/) | Email Authentication (SPF / DKIM / DMARC) | DKIM signing enabled, SPF record analysis, DMARC architecture and deployment strategy |
 ---
 
 ## Environment
