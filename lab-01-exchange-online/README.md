@@ -80,3 +80,79 @@ All objects above were also created and verified via Exchange Online PowerShell.
 
 ### Connect
 ```powershell
+Connect-ExchangeOnline -UserPrincipalName MarquellProctor@ProctorCloud.onmicrosoft.com
+```
+
+### Verify all mailboxes by type
+```powershell
+Get-Mailbox | Select-Object DisplayName, PrimarySmtpAddress, RecipientTypeDetails
+```
+
+![PowerShell - Connected + Get-Mailbox](./screenshots/09-exchange-online-powershell-connected.png)
+
+### Create shared mailbox
+```powershell
+New-Mailbox -Shared -Name "Help Desk Shared Mailbox PS" `
+  -DisplayName "Help Desk Shared Mailbox PS" `
+  -Alias "helpdeskps"
+```
+
+![PowerShell - Shared Mailbox](./screenshots/10-shared-mailbox-powershell.png)
+
+### Create distribution group and add member
+```powershell
+New-DistributionGroup `
+  -Name "IT Announcements PS" `
+  -Alias "it-announcements-ps" `
+  -PrimarySmtpAddress "it-announcements-ps@ProctorCloud.onmicrosoft.com" `
+  -Type Distribution
+
+Add-DistributionGroupMember `
+  -Identity "IT Announcements PS" `
+  -Member "MarquellProctor@ProctorCloud.onmicrosoft.com"
+
+Get-DistributionGroupMember "IT Announcements PS"
+```
+
+![PowerShell - Distribution Group](./screenshots/11-distribution-group-powershell.png)
+
+### Preview dynamic distribution group membership
+```powershell
+$DDG = Get-DynamicDistributionGroup "All Mailbox Users PS"
+
+Get-Recipient `
+  -RecipientPreviewFilter $DDG.RecipientFilter `
+  -OrganizationalUnit $DDG.RecipientContainer
+```
+
+> `RecipientPreviewFilter` runs the filter live against the directory — showing exactly who would receive a message sent to the group at that moment.
+
+![PowerShell - DDG Membership Preview](./screenshots/12-dynamic-distribution-group-members-preview-powershell.png)
+
+### Create transport rule
+```powershell
+New-TransportRule `
+  -Name "Outbound Disclaimer - Lab PS" `
+  -FromScope InOrganization `
+  -SentToScope NotInOrganization `
+  -ApplyHtmlDisclaimerLocation Append `
+  -ApplyHtmlDisclaimerText "<p><strong>Disclaimer:</strong> This email originated from Contoso Financial Group's Microsoft 365 tenant lab environment.</p>" `
+  -ApplyHtmlDisclaimerFallbackAction Wrap
+
+Get-TransportRule "Outbound Disclaimer - Lab PS" | Select-Object Name, State, Mode, Priority
+```
+
+![PowerShell - Transport Rule](./screenshots/13-transport-rule-ps.png)
+
+---
+
+## Key Concepts Demonstrated
+
+| Concept | Applied Here |
+|---------|-------------|
+| Shared mailbox vs user mailbox | No license required; delegation-based access |
+| Send As vs Full Access | Different permissions for different use cases |
+| Static vs dynamic distribution groups | Manual membership vs filter-based auto-membership |
+| RecipientPreviewFilter | Correct DDG membership preview — verifies filter logic before sending |
+| Transport rule fallback actions | Wrap chosen over Ignore/Reject — production-safe decision |
+| GUI + PowerShell parity | Every object built both ways — automation-ready mindset |
