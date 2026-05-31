@@ -1,5 +1,38 @@
-# Microsoft 365 Cloud Engineering Lab Portfolio
+# M365 Exchange Online Administration Lab
+### ProctorCloud Tenant · Built May 2026
 
-This repository documents a hands-on Microsoft 365 and cloud administration lab environment built to demonstrate practical experience across Exchange Online, Microsoft 365 administration, PowerShell automation, identity and access management, security/compliance, troubleshooting, and technical documentation.
+This repository documents hands-on Exchange Online and email security administration labs completed in a Microsoft 365 E5 developer tenant. Labs were built to develop practical skills in Exchange Online management, mail flow, email authentication, and PowerShell automation — aligned to real-world Sr. Cloud Engineer responsibilities in enterprise M365 environments.
 
-The purpose of this portfolio is to show how I approach cloud engineering tasks from both an administrator and engineer mindset: understanding the business requirement, configuring the service through the GUI, repeating or validating the work through PowerShell, documenting the result, and identifying operational considerations that would matter in a production environment.
+---
+
+## What Was Built
+
+| Lab | Topic | Key Skills |
+|-----|-------|------------|
+| [Lab 01](./lab-01-exchange-online/) | Exchange Online Administration | Shared mailboxes, distribution groups, dynamic distribution groups, transport rules — GUI and PowerShell |
+
+---
+
+## Environment
+
+- **Tenant:** ProctorCloud.onmicrosoft.com (Microsoft 365 E5 Developer Tenant)
+- **Admin Portals Used:** Exchange Admin Center, Microsoft Defender (security.microsoft.com)
+- **PowerShell Modules:** ExchangeOnlineManagement (`Connect-ExchangeOnline`)
+
+---
+
+## Approach
+
+Every task was completed twice: once through the GUI to understand the interface an admin uses daily, and once via PowerShell to demonstrate automation capability. This mirrors real-world practice where GUI is used for investigation and PowerShell is used for bulk operations, scripting, and repeatability.
+
+---
+
+## Related Projects
+
+- [AZ-104 Enterprise Azure Lab](https://github.com/mdproctor0/az104-labs) — Governance, networking, storage, monitoring across Azure
+- [Secure Azure Foundation (Terraform IaC)](https://github.com/mdproctor0/terraform-azure-secure-foundation) — Zero-trust network segmentation, Sentinel, Log Analytics
+- [Vulnerability Management Simulation](https://github.com/mdproctor0/Vulnerability-Management-Simulation) — Enterprise VM lifecycle, PowerShell remediation, 81% reduction
+
+---
+
+*Tenant: ProctorCloud.onmicrosoft.com · Author: Marquell Proctor · [LinkedIn](https://linkedin.com/in/marquell-proctor-cyber) · [GitHub](https://github.com/mdproctor0)*
