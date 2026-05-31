@@ -30,7 +30,7 @@ Every task was completed twice: once through the GUI to understand the interface
 ## Related Projects
 
 - [AZ-104 Enterprise Azure Lab](https://github.com/mdproctor0/az104-labs) — Governance, networking, storage, monitoring across Azure
-- [Secure Azure Foundation (Terraform IaC)](https://github.com/mdproctor0/terraform-azure-secure-foundation) — Zero-trust network segmentation, Sentinel, Log Analytics
+- [Secure Azure Foundation (Terraform IaC)](https://github.com/mdproctor0/secure-azure-foundation-terraform/tree/main) — Zero-trust network segmentation, Sentinel, Log Analytics
 - [Vulnerability Management Simulation](https://github.com/mdproctor0/Vulnerability-Management-Simulation) — Enterprise VM lifecycle, PowerShell remediation, 81% reduction
 
 ---
