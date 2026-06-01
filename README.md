@@ -13,6 +13,7 @@ This repository documents hands-on Exchange Online and email security administra
 | [Lab 02](./lab-02-email-auth/) | Email Authentication (SPF / DKIM / DMARC) | DKIM signing enabled, SPF record analysis, DMARC architecture and deployment strategy |
 | [Lab 03](./lab-03-teams-governance/) | Teams Governance & Policy Administration | Meeting policies, messaging policies, app permission policies — GUI and PowerShell |
 | [Lab 04](./lab-04-purview-compliance/) | Purview Compliance — eDiscovery & Retention | Retention policies, retention labels, content search, eDiscovery holds |
+| [Lab 05](./lab-05-conditional-access-dlp/) | Conditional Access & DLP | Named locations, MFA outside corp network, block legacy auth, credit card DLP — simulation mode |
 ---
 
 ## Environment
