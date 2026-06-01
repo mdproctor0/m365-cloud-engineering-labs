@@ -11,6 +11,8 @@ This repository documents hands-on Exchange Online and email security administra
 |-----|-------|------------|
 | [Lab 01](./lab-01-exchange-online/) | Exchange Online Administration | Shared mailboxes, distribution groups, dynamic distribution groups, transport rules — GUI and PowerShell |
 | [Lab 02](./lab-02-email-auth/) | Email Authentication (SPF / DKIM / DMARC) | DKIM signing enabled, SPF record analysis, DMARC architecture and deployment strategy |
+| [Lab 03](./lab-03-teams-governance/) | Teams Governance & Policy Administration | Meeting policies, messaging policies, app permission policies — GUI and PowerShell |
+| [Lab 04](./lab-04-purview-compliance/) | Purview Compliance — eDiscovery & Retention | Retention policies, retention labels, content search, eDiscovery holds |
 ---
 
 ## Environment
