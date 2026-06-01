@@ -1,5 +1,5 @@
 # M365 Exchange Online Administration Lab
-### ProctorCloud Tenant · Built May 2026
+### ProctorCloud Tenant 
 
 This repository documents hands-on Exchange Online and email security administration labs completed in a Microsoft 365 E5 developer tenant. Labs were built to develop practical skills in Exchange Online management, mail flow, email authentication, and PowerShell automation — aligned to real-world Sr. Cloud Engineer responsibilities in enterprise M365 environments.
 
