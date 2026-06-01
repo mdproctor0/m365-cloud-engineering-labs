@@ -238,8 +238,6 @@ Get-CsOnlineUser -Identity $User | `
   Select-Object DisplayName, TeamsAppPermissionPolicy
 ```
 
-![App Permission Policy - Deprecated Notice](./screenshots/08-app-permission-policy-deprecated-gui.png)
-![Manage Apps - Empty Catalog](./screenshots/09-manage-apps-empty-catalog-gui.png)
 ![App Permission Policy - PowerShell](./screenshots/10-app-permission-policy-powershell.png)
 
 > App governance in Teams is actively mid-migration. The permission policy model is being deprecated, the Manage apps replacement isn't fully functional in sandbox tenants, and the PowerShell layer has breaking parameter changes. Documenting this accurately reflects real-world M365 administration — the portal changes faster than the PowerShell layer, and knowing which layer to trust is part of the job.
