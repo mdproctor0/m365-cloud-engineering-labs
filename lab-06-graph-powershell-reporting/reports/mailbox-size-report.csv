@@ -1,0 +1,4 @@
+DisplayName,PrimarySmtpAddress,RecipientType,TotalItemSize,ItemCount,LastLogonTime
+Discovery Search Mailbox,DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}@ProctorCloud.onmicrosoft.com,DiscoveryMailbox,,,
+Help Desk Shared Mailbox,helpdesk@ProctorCloud.onmicrosoft.com,SharedMailbox,"16.99 KB (17,394 bytes)",4,
+Help Desk Shared Mailbox PS,helpdeskps@ProctorCloud.onmicrosoft.com,SharedMailbox,"11.14 KB (11,412 bytes)",2,
