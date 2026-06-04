@@ -15,6 +15,7 @@ This repository documents hands-on Exchange Online and email security administra
 | [Lab 04](./lab-04-purview-compliance/) | Purview Compliance — eDiscovery & Retention | Retention policies, retention labels, content search, eDiscovery holds |
 | [Lab 05](./lab-05-conditional-access-dlp/) | Conditional Access & DLP | Named locations, MFA outside corp network, block legacy auth, credit card DLP — simulation mode |
 | [Lab 06](./lab-06-graph-powershell-reporting/) | Graph API & Bulk PowerShell Reporting | Mailbox size inventory, MFA status audit, Exchange Online PowerShell + Microsoft Graph SDK |
+| [Lab 07](./lab-07-sharepoint-online/) | SharePoint Online Administration | Team site creation, external sharing governance, document library unique permissions — GUI and PnP PowerShell |
 ---
 
 ## Environment
